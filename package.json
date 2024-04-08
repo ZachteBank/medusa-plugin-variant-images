@@ -5,30 +5,30 @@
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andriinuts/medusa-plugin-variant-images"
+    "url": "https://github.com/zachtebank/medusa-plugin-variant-images"
   },
   "files": [
     "dist"
   ],
-  "author": "Andrii Nutskovskyi <andrii.nutskovskyi@gmail.com>",
+  "author": "ZachteBank",
   "license": "MIT",
   "scripts": {
-    "prepare": "cross-env NODE_ENV=production yarn run build",
+    "prepare": "npm run build",
     "test": "jest --passWithNoTests src",
     "build": "tsc -p ./tsconfig.server.json && medusa-admin bundle",
     "watch": "tsc --watch"
   },
   "devDependencies": {
-    "@medusajs/medusa": "^1.14.0",
-    "@medusajs/ui": "^1.0.0",
-    "@medusajs/icons": "^1.0.0",
-    "medusa-react": "^9.0.4",
-    "@medusajs/admin": "^7.0.0",
+    "@medusajs/admin": "^7.1.12",
+    "@medusajs/icons": "1.2.1",
+    "@medusajs/medusa": "1.20.3",
+    "@medusajs/ui": "^2.4.3",
     "@types/stripe": "^8.0.417",
     "awilix": "^8.0.1",
     "cross-env": "^5.2.1",
     "jest": "^25.5.4",
-    "typescript": "^4.9.5"
+    "medusa-react": "^9.0.4",
+    "typescript": "4.9.5"
   },
   "peerDependenciesMeta": {
     "medusa-react": {
@@ -36,17 +36,17 @@
     }
   },
   "peerDependencies": {
-    "@medusajs/medusa": "^1.14.0",
-    "@medusajs/ui": "^1.0.0",
-    "@medusajs/icons": "^1.0.0",
+    "@medusajs/admin": "^7.1.12",
+    "@medusajs/icons": "^1.2.1",
+    "@medusajs/medusa": "^1.20.3",
+    "@medusajs/ui": "^2.4.3",
     "medusa-react": "^9.0.4",
-    "@medusajs/admin": "^7.0.0"
+    "class-validator": "0.14.1"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "medusa-core-utils": "^1.2.0",
-    "typeorm": "^0.3.17"
+    "typeorm": "0.3.20"
   },
   "keywords": [
     "medusa-plugin",

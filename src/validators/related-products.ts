@@ -1,4 +1,7 @@
-import { AdminPostProductsProductVariantsVariantReq as MedusaAdminPostProductsProductVariantsVariantReq } from '@medusajs/medusa';
+import {
+  AdminPostProductsProductVariantsVariantReq as MedusaAdminPostProductsProductVariantsVariantReq,
+  registerOverriddenValidators
+} from '@medusajs/medusa';
 import { IsOptional, IsArray, IsString } from 'class-validator';
 
 export class AdminPostProductsProductVariantsVariantReq extends MedusaAdminPostProductsProductVariantsVariantReq {
@@ -10,3 +13,5 @@ export class AdminPostProductsProductVariantsVariantReq extends MedusaAdminPostP
   @IsOptional()
   thumbnail?: string;
 }
+
+registerOverriddenValidators(AdminPostProductsProductVariantsVariantReq)
