@@ -1,6 +1,6 @@
 {
   "name": "medusa-plugin-variant-images",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Plugin for adding images and thumbnail to variants",
   "main": "dist/index.js",
   "repository": {
@@ -21,12 +21,12 @@
   "devDependencies": {
     "@medusajs/admin": "7.1.12",
     "@medusajs/types": "^1.11.14",
-    "@medusajs/icons": "1.2.1",
+    "@medusajs/icons": "1.2.2",
     "@medusajs/medusa": "1.20.10",
     "@medusajs/ui": "3.0.1",
     "awilix": "^8.0.1",
-    "cross-env": "^5.2.1",
-    "jest": "^25.5.4",
+    "cross-env": "7.0.3",
+    "jest": "^27.3.1",
     "medusa-react": "^9.0.4",
     "typescript": "4.9.5"
   },
@@ -36,7 +36,7 @@
     }
   },
   "peerDependencies": {
-    "@medusajs/admin": "7.1.17",
+    "@medusajs/admin": "7.1.12",
     "@medusajs/icons": "1.2.2",
     "@medusajs/medusa": "1.20.10",
     "@medusajs/ui": "3.0.1",
@@ -53,5 +53,6 @@
     "medusa-plugin-variant",
     "medusa-plugin-images",
     "medusa-plugin-variant-images"
-  ]
+  ],
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
